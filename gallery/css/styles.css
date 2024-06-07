@@ -57,6 +57,7 @@ body {
 /* Hover effect */
 .gallery .photo:hover img {
   filter: grayscale(100%) blur(7px);
+  
 }
 
 /* Info section */
