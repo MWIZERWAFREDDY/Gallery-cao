@@ -3,18 +3,12 @@
   font-family: 'ENGCAPS';
   src: url('../fonts/ENGCAPS.TTF') format('truetype');
 }
-.ropa-sans-regular {
-  font-family: "Ropa Sans", sans-serif;
+
+.six-caps-regular {
+  font-family: "Six Caps", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-.ropa-sans-regular-italic {
-  font-family: "Ropa Sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
 
 /* Apply styles to the entire page */
 body {
@@ -101,9 +95,9 @@ body {
   display: block; /* Display on hover */
 }
 
-/* Apply ENGCAPS font to <h3> elements inside .info */
+/* Apply D-DIN fonts to <h3> elements inside .info */
 .gallery .photo .info h3 {
-  font-family:'Ropa Sans', sans-serif;
+  font-family: 'D-DIN Condensed', sans-serif;
   text-transform: uppercase; /* Capitalize the text */
-  font-size: 20px; /* Increase font size */
+  font-size: 30px; /* Increase font size */
 }
