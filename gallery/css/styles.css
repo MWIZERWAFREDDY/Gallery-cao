@@ -1,0 +1,97 @@
+/* Define the custom fonts */
+@font-face {
+  font-family: 'ENGCAPS';
+  src: url('../fonts/ENGCAPS.TTF') format('truetype');
+}
+
+/* Apply styles to the entire page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000; /* Set background to black */
+  font-family: 'ENGCAPS', Tw Cen MT; 
+}
+
+/* Gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allow photos to wrap to the next line */
+  gap: 0; /* No gap between photos */
+}
+
+/* Individual photo */
+.gallery .photo {
+  position: relative;
+  width: 293px; /* Initial width for larger screens */
+  height: 588px; /* Initial height */
+  margin: 0 1px; /* Add a small margin to separate photos */
+  transition: filter 0.3s, opacity 0.3s;
+  opacity: 1; /* Initial opacity set to 1 */
+}
+
+/* Adjust photo size for smaller screens (mobile phones) */
+@media only screen and (max-width: 600px) {
+  .gallery .photo {
+    width: 98.5px; /* Adjust width for smaller screens */
+    height: 600px; /* Keep the height */
+  }
+}
+
+/* Photo image */
+.gallery .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+/* Hover effect */
+.gallery .photo:hover img {
+  filter: grayscale(100%) blur(7px);
+}
+
+/* Info section */
+.gallery .photo .info {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0.8; /* Initial opacity of the info */
+  transition: opacity 0.3s;
+}
+
+/* Hide the info on smaller screens */
+@media only screen and (max-width: 600px) {
+  .gallery .photo .info {
+    display: none;
+  }
+}
+
+/* "Know More" link */
+.gallery .photo .info .know-more {
+  display: none; /* Initially hidden */
+  color: rgb(101, 204, 245);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.gallery .photo:hover .info {
+  opacity: 1; /* Full opacity on hover */
+}
+
+.gallery .photo:hover .info .know-more {
+  display: block; /* Display on hover */
+}
+
+/* Apply ENGCAPS font to <h3> elements inside .info */
+.gallery .photo .info h3 {
+  font-family: 'ENGCAPS',Engschrift Caps;
+  text-transform: uppercase; /* Capitalize the text */
+  font-size: 30px; /* Increase font size */
+}
