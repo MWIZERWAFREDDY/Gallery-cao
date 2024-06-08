@@ -39,6 +39,14 @@ To view the gallery locally:
     ```
     or simply double-click on `index.html` to open it in your default web browser.
 
+### Responsiveness
+
+The gallery is fully responsive and optimized for the following devices:
+- iPhone 14 Pro Max
+- iPhone XR
+- Galaxy S20 Ultra
+- Google Pixel 7
+
 ### 2. Challenge Tasks
 
 The `challenges` folder contains various problems that have been solved using JavaScript. These tasks are designed to enhance your problem-solving skills with practical coding exercises.
@@ -59,4 +67,6 @@ To get started with this project, follow these steps:
 ## 📁 Repository Structure
 
 Here's an overview of the repository structure:
+
+
 
