@@ -19,4 +19,4 @@ function transformString(str) {
 // Example usage:
 console.log(transformString("Hamburger"));          // Output: "regrubmaH"
 console.log(transformString("Pizza"));              // Output: "80 105 122 122 97"
-console.log(transformString("Chocolate Chip Cookie"));// Output: "eikooCpihCetalocohC"
+console.log(transformString("Chocolate Chip Cookie"));// Output: "eikooC pihC etalocohC"
